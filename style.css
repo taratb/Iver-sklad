@@ -223,30 +223,34 @@ html {
 @media (max-width: 768px) {
     /* Meni koji se otvara preko celog ekrana */
     .navbar .nav-links {
-        display: none; /* sakriven dok nije aktivan */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw; /* pun ekran po širini */
-        height: 100vh; /* pun ekran po visini */
-        
-        background-color: rgba(50, 46, 45, 0.95); /* poluprovidna pozadina */
-        
-        gap: 2rem;
-        z-index: 1000; /* iznad svega */
-        transform: translateY(-100%); /* Početno pomeranje iznad ekrana */
-        transition: transform 0.3s ease; /* Animacija */
-    }
-
-    .navbar .nav-links.active {
+        width: 100vw;
+        height: 100vh;
+    
         display: flex;
-        transform: translateY(0); /* Pomeranje u vidljivost */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: rgba(50, 46, 45, 0.95);
+    
+        gap: 2rem;
+        z-index: 1000;
+    
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
-
+    
+    .navbar .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
     /* Hamburger se prikazuje */
     .hamburger {
         display: flex;
