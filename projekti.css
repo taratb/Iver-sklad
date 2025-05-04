@@ -1,0 +1,40 @@
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+  }
+  
+  .slider img.active {
+    display: block;
+  }
+  
+  .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #F1A22B;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .slider .prev { left: 10px; }
+  .slider .next { right: 10px; }
+  
+  
+
+
+
+
+
+
+
+
