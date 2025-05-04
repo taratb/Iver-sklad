@@ -580,7 +580,7 @@ html {
 .map {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Omjer za 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     margin-bottom: 2rem;
@@ -599,9 +599,10 @@ html {
 
 @media (max-width: 768px) {
     .map {
-        width: 100%; /* Širina na 100% ekrana */
-        padding-left: 0;
-        padding-right: 0;
+        margin: 0 auto;
+        width: 80%; 
+        padding-left: 10px;
+        padding-right: 10px;
     
     }
 
