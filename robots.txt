@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iversklad.rs/sitemap.xml
