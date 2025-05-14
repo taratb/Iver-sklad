@@ -244,6 +244,15 @@ html {
         visibility: hidden;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
+    .navbar .nav-links li {
+        margin: 0;           /* uklanja razmake */
+        padding: 0;          /* dodatno poravnanje */
+        width: auto;         /* sadržaj određuje širinu */
+    }
+
+    .navbar .nav-links li .call-us {
+        margin: 0 auto;       /* centrirano dugme */
+    }
     
     .navbar .nav-links.active {
         transform: translateY(0);
