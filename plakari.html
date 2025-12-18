@@ -3,7 +3,7 @@
 <head>
     <title>Plakari | Iver Sklad</title>
     <meta name="description" content="Iver Sklad izrađuje kuhinje, plakare, dnevne sobe i ostali nameštaj po meri. Pogledajte naše projekte.">
-    <meta name="keywords" content="iver sklad, namestaj po meri, kuhinja, kuhinje, plakar, plakari, dnevna soba, dnevne sobe, sto, stolovi, enterijer">
+    <meta name="keywords" content="iver sklad, namestaj po meri, kuhinja, plakar, dnevne sobe, sto, enterijer">
     <meta name="robots" content="index, follow">
 
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-        <!-- Navigacioni meni -->
+      
         <nav class="navbar">
           <div class="container">
               <a href="index.html#home" class="logo">
@@ -72,7 +72,7 @@
                         <img src="plakari/plakar1-4.jpg" alt="plakar">
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
-                        <!-- Dodaj još slika po potrebi -->
+                    
                       </div>
                       
                     </a>
@@ -88,7 +88,7 @@
                     <img src="plakari/plakar2-5.jpg" alt="plakar">
                     <button class="prev">&#10094;</button>
                     <button class="next">&#10095;</button>
-                    <!-- Dodaj još slika po potrebi -->
+                   
                   </div>
                   
                  
@@ -101,7 +101,7 @@
                     <img src="plakari/plakar3-4.jpg" alt="plakar">
                   <button class="prev">&#10094;</button>
                   <button class="next">&#10095;</button>
-                  <!-- Dodaj još slika po potrebi -->
+               
                 </div>
                 
                 <h3></h3>
@@ -112,10 +112,7 @@
             <a href="index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
         </div>
     </section>
-    
 
-      
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Iver Sklad. Sva prava zadržana.</p>
@@ -131,22 +128,21 @@ document.querySelectorAll('.slider').forEach(slider => {
     const nextBtn = slider.querySelector('.next');
     let currentIndex = 0;
 
-    // Prikazuje samo trenutnu sliku
+
     function showImage(index) {
         images.forEach((img, i) => {
             img.style.display = i === index ? 'block' : 'none';
         });
     }
 
-    showImage(currentIndex); // Prikaži prvu sliku
+    showImage(currentIndex); 
 
-    // Prethodna
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
     });
 
-    // Sledeća
+ 
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
