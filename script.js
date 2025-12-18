@@ -1,4 +1,4 @@
- // JavaScript za fiksnu navigaciju
+
  window.onscroll = function() {
     stickyNavbar();
 };
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.addEventListener('click', () => {
             const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
             
-            // Zatvori sve ostale menije ako otvaraš neki novi
+           
             dropdownToggles.forEach(otherToggle => {
                 if (otherToggle !== toggle) {
                     otherToggle.setAttribute('aria-expanded', 'false');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Klik van menija zatvara sve
+  
     document.addEventListener('click', (e) => {
         dropdownToggles.forEach(toggle => {
             const menu = toggle.nextElementSibling;
@@ -48,20 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// hamburger meni
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const closeMenu = document.querySelector('.close-menu');
 const body = document.querySelector('body');
 
-// Klik na hamburger otvara meni
+
 hamburger.addEventListener('click', () => {
     navLinks.classList.add('active');
     closeMenu.classList.add('active');
     body.classList.add('no-scroll');
 });
 
-// Klik na iks zatvara meni
+
 closeMenu.addEventListener('click', () => {
     navLinks.classList.remove('active');
     closeMenu.classList.remove('active');
