@@ -1,11 +1,11 @@
-/* Osnovni reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Globalni stilovi */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -15,10 +15,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-/* NAVIGACIJA */
-
-/* Glavni navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -54,16 +50,16 @@ html {
 }
 
 .navbar .nav-links {
-    position: absolute; /* Omogućava centriranje u odnosu na navbar */
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Tačno centriranje */
+    transform: translateX(-50%);
     
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
     height: 70px;
-    gap: 2rem; /* prostor između linkova */
+    gap: 2rem; 
 }
 
 .navbar .nav-links li {
@@ -84,7 +80,6 @@ html {
     color: #F1A22B;
 }
 
-/* Dugme desno */
 .call-us.desktop-btn {
     background-color: #F1A22B;
     color: white;
@@ -100,7 +95,6 @@ html {
     background-color: #cd800d;
 }
 
-/* Hamburger - inicijalno sakriven */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -111,37 +105,31 @@ html {
 }
 
 .hamburger div {
-    background-color: white; /* Postavljeno na belo */
+    background-color: white; 
     height: 4px;
     width: 100%;
     border-radius: 2px;
 }
 .mobile-btn {
-    display: none; /* Sakrij dugme iz menija na desktopu */
+    display: none;
 }
-/* Ikona za zatvaranje menija (X) */
+
 .close-menu {
     display: none;
     position: fixed;
     top: 20px;
     right: 30px;
     font-size: 3rem;
-    color: white; /* Postavljeno na belo */
+    color: white; 
     cursor: pointer;
-    z-index: 1001; /* iznad menija */
+    z-index: 1001; 
 }
-
-/* Hover efekat za sve linije hamburger menija (sve tri linije se menjaju boju) */
 .hamburger:hover div {
-    background-color: #F1A22B; /* Sada kada pređeš mišem preko bilo koje linije, sve tri menjaju boju */
+    background-color: #F1A22B;
 }
-
-/* Hover efekat za X ikonu (samo X ikona menja boju) */
 .close-menu:hover {
-    color: #F1A22B; /* Samo X menja boju */
+    color: #F1A22B; 
 }
-/* Dropdown meni */
-/* Dropdown meni - univerzalno */
 .dropdown {
     position: relative;
 }
@@ -203,25 +191,23 @@ html {
     color: #F1A22B;
 }
 
-/* Mobilni - ako želiš nešto dodatno prilagoditi */
 @media (max-width: 768px) {
     .dropdown-menu {
-        position: absolute;  /* Održava dropdown meni u poziciji direktno ispod */
-        top: 100%;           /* Pokreće se ispod dugmeta */
+        position: absolute; 
+        top: 100%;         
         box-shadow: none;
         min-width: 100%;
-        margin-top: 0;       /* Uklanjamo razmak između dugmeta i menija */
+        margin-top: 0;     
     }
 
-    .dropdown:hover { /* Hover efekat na dugmetu Projekti */
+    .dropdown:hover { 
         color: #F1A22B;
     }
 }
 
 
-/* Responsive dizajn */
+
 @media (max-width: 768px) {
-    /* Meni koji se otvara preko celog ekrana */
     .navbar .nav-links {
         position: fixed;
         top: 0;
@@ -245,13 +231,13 @@ html {
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
     .navbar .nav-links li {
-        margin: 0;           /* uklanja razmake */
-        padding: 0;          /* dodatno poravnanje */
-        width: auto;         /* sadržaj određuje širinu */
+        margin: 0;           
+        padding: 0;     
+        width: auto;      
     }
 
     .navbar .nav-links li .call-us {
-        margin: 0 auto;       /* centrirano dugme */
+        margin: 0 auto;     
     }
     
     .navbar .nav-links.active {
@@ -260,17 +246,15 @@ html {
         visibility: visible;
     }
     
-    /* Hamburger se prikazuje */
+
     .hamburger {
         display: flex;
     }
 
-    /* Desktop dugme sakriveno u mobilnoj verziji */
-    .call-us.desktop-btn {
-        display: none; /* Sakriva dugme sa desne strane u mobilnoj verziji */
-    }
 
-    /* Dugme se pokazuje u meniju */
+    .call-us.desktop-btn {
+        display: none; 
+    }
     .mobile-btn {
         display: block;
     }
@@ -289,19 +273,15 @@ html {
     .nav-links li .call-us:hover {
         background-color: #cd800d;
     }
-
-    /* Sakrij ostatak stranice dok je meni otvoren */
     body.no-scroll {
         overflow: hidden;
     }
 
-    /* Prikazivanje X ikone */
     .close-menu.active {
         display: block;
     }
 }
 
-/* Sticky navbar kad skrolujes */
 .navbar.fixed {
     position: fixed;
     top: 0;
@@ -311,7 +291,6 @@ html {
     z-index: 1000;
 }
 
-/* HERO SEKCIJA */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pozadina-probna.jpg') center/cover no-repeat;
     color: #F1A22B;
@@ -336,7 +315,6 @@ html {
     margin-bottom: 3rem;
 }
 
-/* SEKCIJA O NAMA */
 .about {
     padding: 4rem 0;
     background-color: #322E2D;
@@ -390,7 +368,7 @@ html {
     background-color: #cd800d;
 }
 
-/* RESPONSIVE O NAMA SEKCIJA */
+
 @media (max-width: 768px) {
     .about .container {
         flex-direction: column;
@@ -403,10 +381,10 @@ html {
 }
 
 
-/* PROJEKTI */
+
 .projects {
     padding: 4rem 0;
-    background-color: #e9e9e9; /* svetla pozadina za kontrast */
+    background-color: #e9e9e9; 
   }
   
   .projects .container {
@@ -458,13 +436,12 @@ html {
     font-size: 1.2rem;
   }
   
-  /* Dugme ispod projekata */
   .projects .contact-button {
     margin-top: 3rem;
   }
-/* IKONICE */
+
 .contact-icons {
-    background-color:#e9e9e9 ; /* Siva pozadina */
+    background-color:#e9e9e9 ;
     padding: 4rem 0;
     text-align: center;
 }
@@ -488,22 +465,22 @@ html {
 
 .icon {
     display: inline-block;
-    font-size: 2.5rem; /* Povećajte veličinu ikona prema potrebi */
-    color: #F1A22B; /* Zlatna boja */
+    font-size: 2.5rem; 
+    color: #F1A22B;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon:hover {
-    transform: scale(1.1); /* Efekat zoom pri hoveru */
-    color: #cd800d; /* Tamnija zlatna boja na hover */
+    transform: scale(1.1); 
+    color: #cd800d; 
 }
 
-/* Ikone sa zlatnim tonovima */
+
 .icon i {
     transition: color 0.3s ease;
 }
 
-/* pogledajte projekte */
+
 .project-links {
     background-color: #322E2D;
     padding: 4rem 0;
@@ -538,7 +515,7 @@ html {
     color: #322E2D;
 }
 
-/* KONTAKT FORMA */
+
 .contact {
     padding: 4rem 0;
     background-color:#322E2D;
@@ -562,7 +539,7 @@ html {
     color: #ffffffbb;
 }
 
-/* Kontakt Informacije */
+
 .contact-info {
     margin-bottom: 2rem;
     text-align: left;
@@ -589,7 +566,7 @@ html {
     text-decoration: underline;
 }
 
-/* Mapa */
+
 .map {
     position: relative;
     width: 100%;
@@ -620,11 +597,10 @@ html {
     }
 
     .map iframe {
-        height: 300px; /* Smanjena visina mape na telefonima */
+        height: 300px; 
     }
 }
 
-/* Kontakt Forma */
 form {
     display: flex;
     flex-direction: column;
@@ -660,9 +636,6 @@ form button:hover {
     background-color: #cd800d;
 }
 
-
-
-/* FOOTER */
 .footer {
     padding: 2rem 0;
     background-color: #322E2D;
