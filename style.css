@@ -15,6 +15,10 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* NAVBAR  
+__________________________________________________________*/
+
 .navbar {
     display: flex;
     align-items: center;
@@ -79,6 +83,8 @@ html {
 .navbar .nav-links a:hover {
     color: #F1A22B;
 }
+
+/*__________________________________________________________*/
 
 .call-us.desktop-btn {
     background-color: #F1A22B;
@@ -292,7 +298,7 @@ html {
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pozadina-probna.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero.jpg') center/cover no-repeat;
     color: #F1A22B;
     text-align: center;
     padding: 6rem 0;

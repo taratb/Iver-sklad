@@ -16,7 +16,7 @@
 </head>
 
 <body>
-        <!-- Navigacioni meni -->
+        <!-- Nav menu -->
         <nav class="navbar">
           <div class="container">
               <a href="index.html#home" class="logo">
@@ -73,7 +73,7 @@
                         <img src="poslovni prostori/rodjendaonica5.jpg" alt="Rođendaonica 5" >
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
-                        <!-- Dodaj još slika po potrebi -->
+                        <!-- add pics -->
                       </div>
                       
                     </a>
@@ -109,22 +109,22 @@ document.querySelectorAll('.slider').forEach(slider => {
     const nextBtn = slider.querySelector('.next');
     let currentIndex = 0;
 
-    // Prikazuje samo trenutnu sliku
+    // current
     function showImage(index) {
         images.forEach((img, i) => {
             img.style.display = i === index ? 'block' : 'none';
         });
     }
 
-    showImage(currentIndex); // Prikaži prvu sliku
+    showImage(currentIndex); // first img
 
-    // Prethodna
+    // prev
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
     });
 
-    // Sledeća
+    // next
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
