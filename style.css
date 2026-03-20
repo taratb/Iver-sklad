@@ -198,7 +198,6 @@ html {
         box-shadow: none;
         min-width: 100%;
         margin-top: 0;     
-
     }
 
     .dropdown:hover { 
@@ -232,14 +231,14 @@ html {
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
     .navbar .nav-links li {
-        margin: 0;   
+        margin: 0;           
         padding: 0;     
         width: auto;      
     }
 
     .navbar .nav-links li .call-us {
         margin: 0 auto;     
-
+    }
     
     .navbar .nav-links.active {
         transform: translateY(0);
@@ -247,6 +246,7 @@ html {
         visibility: visible;
     }
     
+
     .hamburger {
         display: flex;
     }
@@ -466,7 +466,7 @@ html {
 .icon {
     display: inline-block;
     font-size: 2.5rem; 
-    color: #F1A22B; 
+    color: #F1A22B;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -645,6 +645,4 @@ form button:hover {
 
 .footer p {
     font-size: 1rem;
-}
-
 }
