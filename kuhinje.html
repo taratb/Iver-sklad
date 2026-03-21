@@ -16,7 +16,7 @@
 </head>
 
 <body>
-        <!-- Navigacioni meni -->
+        <!-- Navbar -->
         <nav class="navbar">
           <div class="container">
               <a href="index.html#home" class="logo">
@@ -64,21 +64,50 @@
             <p>Pogledajte neke od naših završenih projekata.</p>
     
             <div class="project-grid">
+
+                
+
                 <div class="project-item">
                     
                       <div class="slider">
-                        <img src="kuhinja/kuhinja1-1.jpg" alt="kuhinja">
-                        <img src="kuhinja/kuhinja1-2.jpg" alt="kuhinja">
-                        <img src="kuhinja/kuhinja1-3.jpg" alt="kuhinja">
-                        <img src="kuhinja/kuhinja1-4.jpg" alt="kuhinja">
-                        <img src="kuhinja/kuhinja1-5.jpg" alt="kuhinja">
+                        <img src="kuhinja/kuhinja4-1.jpg" alt="kuhinja">
+                        <img src="kuhinja/kuhinja4-2.jpg" alt="kuhinja">
+                        <img src="kuhinja/kuhinja4-3.jpg" alt="kuhinja">
+                        <img src="kuhinja/kuhinja4-4.jpg" alt="kuhinja">
+                        <img src="kuhinja/kuhinja4-5.jpg" alt="kuhinja">
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
                       </div>
                       
                     </a>
-                    
-                  
+                
+                </div>
+                <div class="project-item">
+                  <div class="slider"> 
+                    <img src="kuhinja/kuhinja3-1.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja3-2.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja3-3.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja3-4.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja3-5.jpg" alt="kuhinja">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                   
+                </div>
+
+                </div>
+                <div class="project-item">
+                  <div class="slider"> 
+                    <img src="kuhinja/kuhinja5-1.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja5-2.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja5-3.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja5-4.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja5-5.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja5-6.jpg" alt="kuhinja">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                   
+                </div>  
+
                 </div>
                 <div class="project-item">
                   <div class="slider">
@@ -92,16 +121,39 @@
                     <button class="next">&#10095;</button>
                    
                   </div>
-                  
+            
+                   </div>
+                <div class="project-item">
+                  <div class="slider">
+                    <img src="kuhinja/kuhinja7-1.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja7-2.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja7-3.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja7-4.jpg" alt="kuhinja">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                   
+                  </div>
+
+                  </div>
+                <div class="project-item">
+                  <div class="slider">
+                    <img src="kuhinja/kuhinja6-1.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja6-2.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja6-3.jpg" alt="kuhinja">
+                    <img src="kuhinja/kuhinja6-4.jpg" alt="kuhinja">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                   
+                  </div>
                  
               </div>
               <div class="project-item">
                 <div class="slider">
-                  <img src="kuhinja/kuhinja3-1.jpg" alt="kuhinja">
-                  <img src="kuhinja/kuhinja3-2.jpg" alt="kuhinja">
-                  <img src="kuhinja/kuhinja3-3.jpg" alt="kuhinja">
-                  <img src="kuhinja/kuhinja3-4.jpg" alt="kuhinja">
-                  <img src="kuhinja/kuhinja3-5.jpg" alt="kuhinja">
+                <img src="kuhinja/kuhinja1-1.jpg" alt="kuhinja">
+                <img src="kuhinja/kuhinja1-2.jpg" alt="kuhinja">
+                <img src="kuhinja/kuhinja1-3.jpg" alt="kuhinja">
+                <img src="kuhinja/kuhinja1-4.jpg" alt="kuhinja">
+                <img src="kuhinja/kuhinja1-5.jpg" alt="kuhinja">
                   <button class="prev">&#10094;</button>
                   <button class="next">&#10095;</button>
                   
@@ -125,36 +177,33 @@
 
     <script>
  
-document.querySelectorAll('.slider').forEach(slider => {
-    const images = slider.querySelectorAll('img');
-    const prevBtn = slider.querySelector('.prev');
-    const nextBtn = slider.querySelector('.next');
-    let currentIndex = 0;
+        document.querySelectorAll('.slider').forEach(slider => {
+            const images = slider.querySelectorAll('img');
+            const prevBtn = slider.querySelector('.prev');
+            const nextBtn = slider.querySelector('.next');
+            let currentIndex = 0;
 
 
-    function showImage(index) {
-        images.forEach((img, i) => {
-            img.style.display = i === index ? 'block' : 'none';
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.style.display = i === index ? 'block' : 'none';
+                });
+            }
+
+            showImage(currentIndex); 
+
+        
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showImage(currentIndex);
+            });
+
+        
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            });
         });
-    }
-
-    showImage(currentIndex); 
-
-   
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(currentIndex);
-    });
-
- 
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
-    });
-});
-
-
-
 
     </script>
 </html>

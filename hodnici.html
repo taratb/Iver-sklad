@@ -16,7 +16,7 @@
 </head>
 
 <body>
-        <!-- Navigacioni meni -->
+        <!-- Navbar -->
         <nav class="navbar">
           <div class="container">
               <a href="index.html#home" class="logo">
@@ -73,7 +73,6 @@
                         <img src="hodnici/1-5.jpg" alt="rusticni hodnik">
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
-                        <!-- Dodaj još slika po potrebi -->
                       </div>
                       
                     </a>
@@ -90,7 +89,6 @@
                     <img src="hodnici/2-7.jpg" alt="moderni hodnik">
                     <button class="prev">&#10094;</button>
                     <button class="next">&#10095;</button>
-                    <!-- Dodaj još slika po potrebi -->
                   </div>
                   
                  
@@ -102,7 +100,6 @@
                     <img src="hodnici/3-3.jpg" alt="cipelarnik">
                   <button class="prev">&#10094;</button>
                   <button class="next">&#10095;</button>
-                  <!-- Dodaj još slika po potrebi -->
                 </div>
                 
                 <h3></h3>
@@ -132,22 +129,22 @@ document.querySelectorAll('.slider').forEach(slider => {
     const nextBtn = slider.querySelector('.next');
     let currentIndex = 0;
 
-    // Prikazuje samo trenutnu sliku
+    // current
     function showImage(index) {
         images.forEach((img, i) => {
             img.style.display = i === index ? 'block' : 'none';
         });
     }
 
-    showImage(currentIndex); // Prikaži prvu sliku
+    showImage(currentIndex); 
 
-    // Prethodna
+    // prev
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
     });
 
-    // Sledeća
+    // next
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
