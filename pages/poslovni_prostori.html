@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <title>Kupatila | Iver Sklad</title>
+    <title>Poslovni prostori | Iver Sklad</title>
     <meta name="description" content="Iver Sklad izrađuje kuhinje, plakare, dnevne sobe i ostali nameštaj po meri. Pogledajte naše projekte.">
-    <meta name="keywords" content="iver sklad, kupatilo, enterijer">
+    <meta name="keywords" content="iver sklad, namestaj po meri, kuhinja, kuhinje, plakar, plakari, dnevna soba, dnevne sobe, sto, stolovi, enterijer">
     <meta name="robots" content="index, follow">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projekti.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projekti.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
     
 </head>
 
 <body>
+        <!-- Nav menu -->
         <nav class="navbar">
           <div class="container">
-              <a href="index.html#home" class="logo">
-                  <img src="logo.png" alt="Logo">
+              <a href="../index.html#home" class="logo">
+                  <img src="../logo.png" alt="Logo">
               </a>
               <ul class="nav-links">
-                  <li><a href="index.html#home">Početna</a></li>
-                  <li><a href="index.html#o-nama">O nama</a></li>
+                  <li><a href="../index.html#home">Početna</a></li>
+                  <li><a href="../index.html#o-nama">O nama</a></li>
                   
                   <li class="dropdown">
                       <button class="dropdown-toggle" aria-expanded="false">
@@ -39,12 +40,12 @@
                           <li><a href="poslovni_prostori.html#poslovni-prostori">Poslovni prostori</a></li>
                       </ul>
                   </li>
-                  <li><a href="index.html#kontakt">Kontakt</a></li>
+                  <li><a href="../index.html#kontakt">Kontakt</a></li>
                   <li class="mobile-btn">
                       <button onclick="window.location.href='tel:+381656551845'" class="call-us">Pozovite nas</button>
                   </li>
               </ul>
-              <button onclick="window.location.href='index.html#kontakt'" class="call-us desktop-btn">Pozovite nas</button>
+              <button onclick="window.location.href='../index.html#kontakt'" class="call-us desktop-btn">Pozovite nas</button>
   
               <div class="hamburger">
                   <div></div>
@@ -58,59 +59,43 @@
     <section class="projects">
         <div class="container">
             <p> </p>
-            <h2>Kupatila</h2>
-            <p>Pogledajte neke od naših završenih projekata.</p>
+            <h2>Poslovni prostori</h2>
+            <p>Uređujemo Vaše domove, ali i poslovne prostore.</p>
     
             <div class="project-grid">
                 <div class="project-item">
                     
                       <div class="slider">
-                        <img src="kupatila/kupatilo1-1.jpg" alt="kupatilo">
-                        <img src="kupatila/kupatilo1-2.jpg" alt="kupatilo">
+                        <img src="../rodjendaonica.jpg" alt="Rođendaonica" >
+                        <img src="../img/poslovni prostori/rodjendaonica2.jpg" alt="Rođendaonica 2" >
+                        <img src="../img/poslovni prostori/rodjendaonica3.jpg" alt="Rođendaonica 3" >
+                        <img src="../img/poslovni prostori/rodjendaonica4.jpg" alt="Rođendaonica 4" >
+                        <img src="../img/poslovni prostori/rodjendaonica5.jpg" alt="Rođendaonica 5" >
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
                       </div>
                       
                     </a>
                     
-                  
-                </div>
-                <div class="project-item">
-                  <div class="slider">
-                    <img src="kupatila/kupatilo2-1.jpg" alt="kupatilo">
-                    <img src="kupatila/kupatilo2-2.jpg" alt="kupatilo">
-                    <img src="kupatila/kupatilo2-3.jpg" alt="kupatilo">
-                    <img src="kupatila/kupatilo2-4.jpg" alt="kupatilo">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
-                  </div>
-                  
-                 
-              </div>
-              <div class="project-item">
-                <div class="slider">
-                    <img src="kupatila/kupatilo3-2.jpg" alt="kupatilo">
-                    <img src="kupatila/kupatilo3-1.jpg" alt="kupatilo">
-                    <img src="kupatila/kupatilo3-3.jpg" alt="kupatilo">
-                  <button class="prev">&#10094;</button>
-                  <button class="next">&#10095;</button>
-                </div>
-                
-                <h3></h3>
+                <h3>Rođendaonica po meri</h3>
             </div>
             
 
-            </div>
-            <a href="index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
+    </div>
+        
+            <a href="../index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
         </div>
     </section>
+    
 
+      
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Iver Sklad. Sva prava zadržana.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 
     <script>
  
@@ -120,21 +105,22 @@ document.querySelectorAll('.slider').forEach(slider => {
     const nextBtn = slider.querySelector('.next');
     let currentIndex = 0;
 
-
+    // current
     function showImage(index) {
         images.forEach((img, i) => {
             img.style.display = i === index ? 'block' : 'none';
         });
     }
 
-    showImage(currentIndex); 
+    showImage(currentIndex); // first img
 
+    // prev
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
     });
 
-
+    // next
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);

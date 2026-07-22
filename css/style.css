@@ -309,7 +309,7 @@ __________________________________________________________*/
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../hero.jpg') center/cover no-repeat;
     color: #F1A22B;
     text-align: center;
     padding: 4rem 0;                

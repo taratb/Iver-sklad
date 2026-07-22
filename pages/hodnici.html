@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <title>Poslovni prostori | Iver Sklad</title>
+    <title>Hodnici | Iver Sklad</title>
     <meta name="description" content="Iver Sklad izrađuje kuhinje, plakare, dnevne sobe i ostali nameštaj po meri. Pogledajte naše projekte.">
     <meta name="keywords" content="iver sklad, namestaj po meri, kuhinja, kuhinje, plakar, plakari, dnevna soba, dnevne sobe, sto, stolovi, enterijer">
     <meta name="robots" content="index, follow">
@@ -9,22 +9,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projekti.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projekti.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
     
 </head>
 
 <body>
-        <!-- Nav menu -->
+        <!-- Navbar -->
         <nav class="navbar">
           <div class="container">
-              <a href="index.html#home" class="logo">
-                  <img src="logo.png" alt="Logo">
+              <a href="../index.html#home" class="logo">
+                  <img src="../logo.png" alt="Logo">
               </a>
               <ul class="nav-links">
-                  <li><a href="index.html#home">Početna</a></li>
-                  <li><a href="index.html#o-nama">O nama</a></li>
+                  <li><a href="../index.html#home">Početna</a></li>
+                  <li><a href="../index.html#o-nama">O nama</a></li>
                   
                   <li class="dropdown">
                       <button class="dropdown-toggle" aria-expanded="false">
@@ -40,12 +40,12 @@
                           <li><a href="poslovni_prostori.html#poslovni-prostori">Poslovni prostori</a></li>
                       </ul>
                   </li>
-                  <li><a href="index.html#kontakt">Kontakt</a></li>
+                  <li><a href="../index.html#kontakt">Kontakt</a></li>
                   <li class="mobile-btn">
                       <button onclick="window.location.href='tel:+381656551845'" class="call-us">Pozovite nas</button>
                   </li>
               </ul>
-              <button onclick="window.location.href='index.html#kontakt'" class="call-us desktop-btn">Pozovite nas</button>
+              <button onclick="window.location.href='../index.html#kontakt'" class="call-us desktop-btn">Pozovite nas</button>
   
               <div class="hamburger">
                   <div></div>
@@ -59,35 +59,55 @@
     <section class="projects">
         <div class="container">
             <p> </p>
-            <h2>Poslovni prostori</h2>
-            <p>Uređujemo Vaše domove, ali i poslovne prostore.</p>
+            <h2>Hodnici</h2>
+            <p>Pogledajte neke od naših završenih projekata.</p>
     
             <div class="project-grid">
                 <div class="project-item">
                     
                       <div class="slider">
-                        <img src="rodjendaonica.jpg" alt="Rođendaonica" >
-                        <img src="poslovni prostori/rodjendaonica2.jpg" alt="Rođendaonica 2" >
-                        <img src="poslovni prostori/rodjendaonica3.jpg" alt="Rođendaonica 3" >
-                        <img src="poslovni prostori/rodjendaonica4.jpg" alt="Rođendaonica 4" >
-                        <img src="poslovni prostori/rodjendaonica5.jpg" alt="Rođendaonica 5" >
+                        <img src="../img/hodnici/1-1.jpg" alt="rusticni hodnik">
+                        <img src="../img/hodnici/1-2.jpg" alt="rusticni hodnik">
+                        <img src="../img/hodnici/1-3.jpg" alt="rusticni hodnik">
+                        <img src="../img/hodnici/1-4.jpg" alt="rusticni hodnik">
+                        <img src="../img/hodnici/1-5.jpg" alt="rusticni hodnik">
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
-                        <!-- add pics -->
                       </div>
                       
                     </a>
                     
                   
+                </div>
+                <div class="project-item">
+                  <div class="slider">
+                    <img src="../img/hodnici/2-2.jpg" alt="moderni hodnik">
+                    <img src="../img/hodnici/2-3.jpg" alt="moderni hodnik">   
+                    <img src="../img/hodnici/2-4.jpg" alt="moderni hodnik">
+                    <img src="../img/hodnici/2-5.jpg" alt="moderni hodnik">
+                    <img src="../img/hodnici/2-6.jpg" alt="moderni hodnik">
+                    <img src="../img/hodnici/2-7.jpg" alt="moderni hodnik">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                  </div>
+                  
+                 
+              </div>
+              <div class="project-item">
+                <div class="slider">
+                    <img src="../img/hodnici/3-1.jpg" alt="cipelarnik">
+                    <img src="../img/hodnici/3-2.jpg" alt="cipelarnik">
+                    <img src="../img/hodnici/3-3.jpg" alt="cipelarnik">
+                  <button class="prev">&#10094;</button>
+                  <button class="next">&#10095;</button>
+                </div>
                 
-                
-                <h3>Rođendaonica po meri</h3>
+                <h3></h3>
             </div>
             
 
-    </div>
-        
-            <a href="index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
+            </div>
+            <a href="../index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
         </div>
     </section>
     
@@ -99,7 +119,7 @@
             <p>&copy; 2025 Iver Sklad. Sva prava zadržana.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 
     <script>
  
@@ -116,7 +136,7 @@ document.querySelectorAll('.slider').forEach(slider => {
         });
     }
 
-    showImage(currentIndex); // first img
+    showImage(currentIndex); 
 
     // prev
     prevBtn.addEventListener('click', () => {

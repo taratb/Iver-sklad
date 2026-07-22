@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <title>Plakari | Iver Sklad</title>
+    <title>Kupatila | Iver Sklad</title>
     <meta name="description" content="Iver Sklad izrađuje kuhinje, plakare, dnevne sobe i ostali nameštaj po meri. Pogledajte naše projekte.">
-    <meta name="keywords" content="iver sklad, namestaj po meri, kuhinja, plakar, dnevne sobe, sto, enterijer">
+    <meta name="keywords" content="iver sklad, kupatilo, enterijer">
     <meta name="robots" content="index, follow">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projekti.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projekti.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
     
 </head>
 
 <body>
-      
         <nav class="navbar">
           <div class="container">
-              <a href="index.html#home" class="logo">
-                  <img src="logo.png" alt="Logo">
+              <a href="../index.html#home" class="logo">
+                  <img src="../logo.png" alt="Logo">
               </a>
               <ul class="nav-links">
-                  <li><a href="index.html#home">Početna</a></li>
-                  <li><a href="index.html#o-nama">O nama</a></li>
+                  <li><a href="../index.html#home">Početna</a></li>
+                  <li><a href="../index.html#o-nama">O nama</a></li>
                   
                   <li class="dropdown">
                       <button class="dropdown-toggle" aria-expanded="false">
@@ -40,12 +39,12 @@
                           <li><a href="poslovni_prostori.html#poslovni-prostori">Poslovni prostori</a></li>
                       </ul>
                   </li>
-                  <li><a href="index.html#kontakt">Kontakt</a></li>
+                  <li><a href="../index.html#kontakt">Kontakt</a></li>
                   <li class="mobile-btn">
                       <button onclick="window.location.href='tel:+381656551845'" class="call-us">Pozovite nas</button>
                   </li>
               </ul>
-              <button onclick="window.location.href='index.html#kontakt'" class="call-us desktop-btn">Pozovite nas</button>
+              <button onclick="window.location.href='../index.html#kontakt'" class="call-us desktop-btn">Pozovite nas</button>
   
               <div class="hamburger">
                   <div></div>
@@ -59,20 +58,17 @@
     <section class="projects">
         <div class="container">
             <p> </p>
-            <h2>Plakari</h2>
+            <h2>Kupatila</h2>
             <p>Pogledajte neke od naših završenih projekata.</p>
     
             <div class="project-grid">
                 <div class="project-item">
                     
                       <div class="slider">
-                        <img src="plakari/plakar1-1.jpg" alt="plakar">
-                        <img src="plakari/plakar1-2.jpg" alt="plakar">
-                        <img src="plakari/plakar1-3.jpg" alt="plakar">
-                        <img src="plakari/plakar1-4.jpg" alt="plakar">
+                        <img src="../img/kupatila/kupatilo1-1.jpg" alt="kupatilo">
+                        <img src="../img/kupatila/kupatilo1-2.jpg" alt="kupatilo">
                         <button class="prev">&#10094;</button>
                         <button class="next">&#10095;</button>
-                    
                       </div>
                       
                     </a>
@@ -81,27 +77,23 @@
                 </div>
                 <div class="project-item">
                   <div class="slider">
-                    <img src="plakari/plakar2-1.jpg" alt="plakar">
-                    <img src="plakari/plakar2-2.jpg" alt="plakar">
-                    <img src="plakari/plakar2-3.jpg" alt="plakar">
-                    <img src="plakari/plakar2-4.jpg" alt="plakar">
-                    <img src="plakari/plakar2-5.jpg" alt="plakar">
+                    <img src="../img/kupatila/kupatilo2-1.jpg" alt="kupatilo">
+                    <img src="../img/kupatila/kupatilo2-2.jpg" alt="kupatilo">
+                    <img src="../img/kupatila/kupatilo2-3.jpg" alt="kupatilo">
+                    <img src="../img/kupatila/kupatilo2-4.jpg" alt="kupatilo">
                     <button class="prev">&#10094;</button>
                     <button class="next">&#10095;</button>
-                   
                   </div>
                   
                  
               </div>
               <div class="project-item">
                 <div class="slider">
-                    <img src="plakari/plakar3-1.jpg" alt="plakar">
-                    <img src="plakari/plakar3-2.jpg" alt="plakar">
-                    <img src="plakari/plakar3-3.jpg" alt="plakar">
-                    <img src="plakari/plakar3-4.jpg" alt="plakar">
+                    <img src="../img/kupatila/kupatilo3-2.jpg" alt="kupatilo">
+                    <img src="../img/kupatila/kupatilo3-1.jpg" alt="kupatilo">
+                    <img src="../img/kupatila/kupatilo3-3.jpg" alt="kupatilo">
                   <button class="prev">&#10094;</button>
                   <button class="next">&#10095;</button>
-               
                 </div>
                 
                 <h3></h3>
@@ -109,7 +101,7 @@
             
 
             </div>
-            <a href="index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
+            <a href="../index.html#kontakt" class="contact-button">Kontaktirajte nas</a>
         </div>
     </section>
 
@@ -118,7 +110,7 @@
             <p>&copy; 2025 Iver Sklad. Sva prava zadržana.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 
     <script>
  
@@ -142,7 +134,7 @@ document.querySelectorAll('.slider').forEach(slider => {
         showImage(currentIndex);
     });
 
- 
+
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
@@ -151,4 +143,3 @@ document.querySelectorAll('.slider').forEach(slider => {
 
     </script>
 </html>
-
